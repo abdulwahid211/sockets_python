@@ -7,16 +7,16 @@ from flask import Flask
 app = Flask(__name__)
 
 if __name__ == "__main__":
-port = int(os.environ.get("PORT", 5000))
-host = "0.0.0.0"
-app.run(host=host, port=port)
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-s.bind((host, port))
-s.listen(100)
-list_of_clients = []
-print("Server Socket successfully created")
-m = Message("Server", "Welcome to the chatroom mate!")
+    port = int(os.environ.get("PORT", 5000))
+    host = "0.0.0.0"
+    app.run(host=host, port=port)
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    s.bind((host, port))
+    s.listen(100)
+    list_of_clients = []
+    print("Server Socket successfully created")
+    m = Message("Server", "Welcome to the chatroom mate!")
 
 
 def process(connect):
