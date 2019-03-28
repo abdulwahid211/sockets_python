@@ -6,7 +6,7 @@ Port number and hostname can be found in the 'server.py' and 'client.py'
 
 ## Run
 
-To run the server broadcasting and client to communicate, please do the following: 
+To run the server and client to communicate, please do the following: 
 
 Server side 
 ```bash
