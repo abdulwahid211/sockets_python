@@ -1,2 +1,2 @@
-# programming with sockets in Python
+# Sockets in Python
 #
